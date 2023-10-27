@@ -1,0 +1,100 @@
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Tables and Forms</title>
+</head>
+<body>
+    <table border="3">
+        <!--Table Head-->
+        <thead>
+            <th>Sütun 1</th> <!--th sütun için kullanılır-->
+            <th>Sütun 2</th>
+            <th>Sütun 3</th>
+
+        </thead>
+
+        <!--Table Row-->
+        <tr>
+            <td>Satir 1 </td> <!--td satır için kullanılır-->
+            <td>Satir 2 </td>
+            <td>Satir 3 </td>
+        </tr>
+
+        <tr>
+            <td>Satir 1-1 </td> <!--td satır için kullanılır/farklı değerler için kopyala yapıştır yapılıp değerler değiştirilebilir-->
+            <td>Satir 2-1 </td>
+            <td>Satir 3-1 </td>
+        </tr>
+    </table>
+    <br><br><br><br>
+
+    <form action="images.html"> <!--kullanıcıdan aksiyon almak için formlar ile çalışıyoruz. Formlara aksiyon verilebilir. (siteye git gibi)-->
+        
+        <label for="email">E-mail: </label> <!--for id verirsek o label verilen id'ye bağlanacak. yani onun için olduğunu söylemiş olduk-->
+        <input type="email" id="email" placeholder="E-mail Adresinizi Giriniz"> <!--labelın girileceği kutucuk-->
+
+        <br>
+        <br>
+
+        <label for="sifre">Şifre: </label>
+        <input type="password" id="sifre" placeholder="Şifrenizi Giriniz"> <!--labelın girileceği kutucuk-->
+
+        <br>
+        <br>
+
+        <input type="submit" value="Giriş"> <!--buton için submit-->
+        
+        <br>
+        <br>
+    </form>
+
+    <form>
+        <p>Hp Victus veya Moonstar Notebook ? </p>
+        <label for="hpVictus">Hp Victus</label>
+        <input type="radio" id="hpVictus" name="hpVictus"> <!--seçim yapılacağı durumda radio kullanılır-->
+        <br>
+        <label for="moonstar">Moonstar</label>
+        <input type="radio" id="moonstar" name="moonstar"> <!--nameler ile urlde bilgi alınabilir-->
+        <br>
+        <br>
+        <input type="submit" value="Giriş"> <!--buton için submit-->
+
+        <br>
+        <br>
+
+    </form>
+
+    <form>
+        <p>Cinsiteriniz </p>
+        <label for="erkek">Erkek</label>
+        <input type="radio" id="erkek" name="cinsiyet" value="erkek"> <!--seçim yapılacağı durumda radio kullanılır-->
+        <br>
+        <label for="kadın">Kadın</label>
+        <input type="radio" id="kadın" name="cinsiyet" value="kadın"> <!--nameler ile urlde bilgi alınabilir-->
+        <!--eğer iki seçenekten birisini göndermek istiyorsak o zaman name adları aynı olmalı. mesela cinsiyette-->
+        <br>
+        <br>
+        <input type="submit" value="Giriş"> <!--buton için submit-->
+    </form>
+
+    <form>
+        <select name="puanlama">
+            <p>Servis puanlamsı yapınız!</p>
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+        </select>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Seçim"> 
+    </form>
+
+
+
+</body>
+</html>
