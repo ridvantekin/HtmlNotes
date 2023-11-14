@@ -1,0 +1,33 @@
+p{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52vh;
+    margin: 0
+}
+
+.searchButton{
+    height: 100px;
+    width: 600px;
+    position: relative;
+    left: 470px;
+    top: -100px;
+    
+}
+
+.Button1{
+    position: relative;
+    left: 110px;
+    top: 20px;
+}
+
+.Button2{
+    position: relative;
+    left: 250px;
+    top: -17px;
+}
+
+.btn-secondary{
+    background-color:gray;
+}
